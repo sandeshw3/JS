@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countdown Timer</title>
+</head>
+<body>
+  <h1 id="countdown"></h1>
+
+  <script>
+    const targetDate = new Date("Dec 31, 2024 23:59:59").getTime();
+
+    setInterval(() => {
+      const timeLeft = targetDate - new Date().getTime();
+      if (timeLeft < 0) {
+        document.getElementById("countdown").innerHTML = "EXPIRED";
+        return;
+      }
+
+      const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+      document.getElementById("countdown").innerHTML =
+        days+"d" + hours+"h"+ minutes+"m" + seconds+"s";
+    }, 1000);
+  </script>
+</body>
+</html>

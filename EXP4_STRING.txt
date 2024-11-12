@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        myfun();
+        function myfun() {
+            var string1= prompt("enter string");
+            var string2= prompt("enter string");
+            if(string1.toUpperCase()===string2.toUpperCase()){
+                document.write("they are equal");
+
+            }
+            else {
+                document.write("they are not equal");
+            }
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home Page Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    .container {
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      width: 300px;
+      margin: 0 auto;
+    }
+    input {
+      margin: 10px;
+      padding: 10px;
+      width: 90%;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to Our Website</h1>
+    <p>Hover over this text to change the background color!</p>
+    <input type="text" placeholder="Click here to focus and change color" id="textInput">
+    <br>
+    <button id="hoverButton">Hover over me!</button>
+  </div>
+
+  <script>
+    
+    document.querySelector("p").onmouseover = function() {
+      document.body.style.backgroundColor = "#f0e68c"; 
+    };
+
+    
+    document.querySelector("p").onmouseout = function() {
+      document.body.style.backgroundColor = "#ffffff"; 
+    };
+
+   
+    document.getElementById("textInput").onfocus = function() {
+      document.body.style.backgroundColor = "#add8e6"; 
+    };
+
+   
+    document.getElementById("textInput").onblur = function() {
+      document.body.style.backgroundColor = "#ffffff"; 
+    };
+
+    
+    document.getElementById("hoverButton").onmouseover = function() {
+      document.body.style.backgroundColor = "#ffcccb"; 
+    };
+    document.getElementById("hoverButton").onmouseout = function() {
+      document.body.style.backgroundColor = "#ffffff"; 
+      
+    };
+  </script>
+</body>
+</html>

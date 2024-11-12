@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    let b=5,l=10;
+    let area_r;
+    area_r= l*b;
+    alert("area_r of rectangle is,"+area_r);
+    document.write("area_r of rectangle is "+area_r);
+    confirm("area_r of rectangle is,"+area_r);
+</script>
+
+    
+</body>
+</html>

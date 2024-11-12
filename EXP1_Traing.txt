@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"content ="width"=device-width, initial-scale="1.8">
+        <title>Document</title>
+
+    </head>
+<body>
+    <script>
+       let b=20,h=5;
+       let area_t;
+       area_t=(1/2)*b*h;
+       alert("area_t of triangle is"+area_t);
+       document.write("area_t of traiangle is "+area_t);
+       confirm("area_t of traingle is"+area_t);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    
+function appendObjectToArray(obj, array) {
+  if (Array.isArray(array)) { 
+    array.push(obj); 
+    console.log("Object appended successfully:", array);
+  } else {
+    console.log("The provided argument is not an array.");
+  }
+}
+
+
+const myArray = []; 
+const myObject = { name: "John", age: 30 }; 
+
+appendObjectToArray(myObject, myArray); 
+
+
+const checkArray = [1, 2, 3];
+const checkObject = { a: 1, b: 2 };
+
+console.log("Is checkArray an array?", Array.isArray(checkArray)); 
+console.log("Is checkObject an array?", Array.isArray(checkObject)); 
+
+</script>
+</body>
+</html>
